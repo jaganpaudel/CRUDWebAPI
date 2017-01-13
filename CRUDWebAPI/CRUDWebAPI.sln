@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDWebAPI", "CRUDWebAPI\CRUDWebAPI.csproj", "{1284A00A-4BC4-458C-87E6-20059D7356D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDWebApi_Client", "CRUDWebApi_Client\CRUDWebApi_Client.csproj", "{EB9A354E-AD9D-42E4-A68A-71BBE6D854DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1284A00A-4BC4-458C-87E6-20059D7356D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1284A00A-4BC4-458C-87E6-20059D7356D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1284A00A-4BC4-458C-87E6-20059D7356D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1284A00A-4BC4-458C-87E6-20059D7356D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB9A354E-AD9D-42E4-A68A-71BBE6D854DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9A354E-AD9D-42E4-A68A-71BBE6D854DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9A354E-AD9D-42E4-A68A-71BBE6D854DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9A354E-AD9D-42E4-A68A-71BBE6D854DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

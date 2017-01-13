@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <a href="@Url.Action("Create","Employee")">Add New Employee</a>
+
+    <br />
+    <table cellpadding="2" cellspacing="2" border="1">
+
+        <tr>
+<th>
+    Id
+</th>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Salary
+            </th>
+
+
+        </tr>
+        @foreach(var employ in ViewBag.listEmployee)
+        {
+            <tr>
+                <td>@employ.Employee_ID</td>
+                <td>@employ.First_Name</td>
+                <td>@employ.Last_Name</td>
+                <td>@employ.Salary</td>
+                <td><a onclick="return confirm('Are you Sure?')" href="@Url.Action("Delete","Employee",new { id = Convert.ToInt16(employ.Employee_ID) })">Delete</a>
+
+                | 
+                    <a href="@Url.Action("Edit","Employee",new { id = Convert.ToInt16(employ.Employee_ID) })">Edit</a>
+                
+                </td>
+            </tr>
+        }
+
+    </table>
+    
+</body>
+</html>

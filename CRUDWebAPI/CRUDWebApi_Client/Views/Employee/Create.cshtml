@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model CRUDWebApi_Client.ViewModels.EmployeeViewModels
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    @using (Html.BeginForm("Create", "Employee", FormMethod.Post))
+    {
+        <table cellpadding="2" cellspacing="2">
+    @*<tr>
+        <td>@Html.LabelFor(model => Model.Employee.Employee_ID)</td>
+        <td>@Html.TextBoxFor(model => Model.Employee.Employee_ID)</td>
+        </tr>*@
+    <tr>
+        <td>@Html.LabelFor(model => Model.Employee.First_Name)</td>
+        <td>@Html.TextBoxFor(model => Model.Employee.First_Name)</td>
+
+    </tr>
+
+             <tr>
+                 <td>@Html.LabelFor(model => Model.Employee.Last_Name)</td>
+                 <td>@Html.TextBoxFor(model => Model.Employee.Last_Name)</td>
+
+             </tr>
+
+             <tr>
+                 <td>@Html.LabelFor(model => Model.Employee.Salary)</td>
+                 <td>@Html.TextBoxFor(model => Model.Employee.Salary)</td>
+
+             </tr>
+
+             <tr>
+                 <td>&nbsp;</td>
+                 <td><input type="submit" value="Save" /></td>
+
+             </tr>
+    
+    </table>
+       }
+
+</body>
+</html>
